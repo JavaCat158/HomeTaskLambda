@@ -1,4 +1,4 @@
-package noderush.taskneto.worker;
+package src.worker;
 
 public class Worker {
     private final OnTaskDoneListener callback;
@@ -23,12 +23,3 @@ public class Worker {
     }
 }
 
-@FunctionalInterface
-interface OnTaskDoneListener {
-    void onDone(String result);
-}
-
-@FunctionalInterface
-interface OnTaskErrorListener {
-    void error(String result);
-}
